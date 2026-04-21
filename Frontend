@@ -1,0 +1,85 @@
+🧠 TrueSight AI — Frontend
+
+A modern, responsive frontend for TrueSight AI, a deepfake detection platform that analyzes images, videos, and audio to determine whether content is real or AI-generated.
+
+🚀 Overview
+
+The frontend is built using React + Vite and provides a smooth, interactive interface for users to upload media, view detection results, and manage authentication.
+
+It communicates with a FastAPI backend and displays AI-powered analysis results in real time.
+
+✨ Features
+📁 Upload Image, Video, or Audio files
+🔍 Real-time Deepfake Detection Results
+📊 Confidence Score Visualization (Charts)
+🔐 Secure Authentication (Google / OTP / Email)
+🎨 Modern UI with animations
+📜 Detection History Dashboard
+🛠 Tech Stack
+React 18 – UI library
+Vite – Fast build tool
+Tailwind CSS – Styling
+Framer Motion – Animations
+Recharts – Data visualization
+Context API – State management
+🔐 Authentication
+Google Sign-In
+Phone OTP Login
+Email & Password Login
+
+Authentication is handled via Firebase on the frontend and connected to backend JWT-based sessions.
+
+📂 Project Structure
+src/
+│── components/      # Reusable UI components
+│── pages/           # Main pages (Home, Dashboard, Auth)
+│── context/         # AuthContext (global state)
+│── services/        # API calls
+│── assets/          # Images & static files
+│── App.jsx
+│── main.jsx
+🔄 How It Works
+User uploads media (image/video/audio)
+File is sent to backend via API (FormData)
+Backend processes file using AI model
+Response (REAL/FAKE + confidence) is returned
+UI updates dynamically with results
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/your-username/truesight-frontend.git
+cd truesight-frontend
+2. Install dependencies
+npm install
+3. Run development server
+npm run dev
+
+Frontend will run on:
+
+http://localhost:5173
+🌐 Backend Connection
+
+Make sure backend is running on:
+
+http://localhost:8000
+
+Update API base URL if needed in your service files.
+
+📦 Build for Production
+npm run build
+⚠️ Notes
+Ensure Firebase config is properly set up
+Backend must be running for detection features
+Large files may take time to process
+🚀 Future Improvements
+Real-time video streaming detection
+Improved UI/UX animations
+Mobile responsiveness optimization
+Dark/Light theme toggle
+👨‍💻 Author
+
+Vedant Shah
+Co-founder, AutomateX
+
+📌 Final Note
+
+“TrueSight AI aims to restore trust in digital media by helping users verify what is real and what is not.”
